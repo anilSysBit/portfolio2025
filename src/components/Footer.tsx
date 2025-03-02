@@ -19,13 +19,13 @@ const Footer: React.FC = () => {
               Let's create something amazing together.
             </p>
             <div className="flex space-x-4">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://github.com/anilSysBit" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <Github className="h-5 w-5" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/in/anil-wagle-a09609224/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://x.com/anilwagle808" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <Twitter className="h-5 w-5" />
               </a>
               <a href="mailto:anil.wagle808@gmail.com" className="text-gray-400 hover:text-white transition-colors">
@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li className="text-gray-400">
-                <span>Kathmandu, Nepal</span>
+                <span>Chitwan, Nepal</span>
               </li>
             </ul>
           </div>
