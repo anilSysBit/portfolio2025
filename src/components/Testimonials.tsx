@@ -5,22 +5,23 @@ import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 const Testimonials: React.FC = () => {
   const testimonials = [
     {
-      name: 'Sarah Johnson',
-      position: 'CEO, TechStart',
-      content: 'Working with Anil was a game-changer for our company. He delivered our web application ahead of schedule and exceeded all our expectations. His attention to detail and problem-solving skills are exceptional.',
-      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
+      name: 'Saugat Devkota',
+      position: 'CEO, SD Tech Company',
+      content: "It was very nice working with Anil Wagle, who was a game-changer. He completed the work very well.",
+      image: 'https://media.licdn.com/dms/image/v2/D4E03AQH-gIyE-TWdyQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1707847055735?e=1746662400&v=beta&t=LcyLx2u0rFcVsXye0RVHvhv0yzSid_4IyihUD8IuLnw',
     },
     {
-      name: 'Michael Chen',
-      position: 'Product Manager, InnovateCorp',
+      name: 'Padma Adhikari',
+      position: 'Co-Founder, Jagatpur E Bazar',
       content: "Anil is one of the most talented developers I've worked with. He has a deep understanding of both frontend and backend technologies, and consistently delivers high-quality code. He's also great at communicating complex technical concepts.",
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
+      image: 'https://picsum.photos/100?random=2',
+
     },
     {
-      name: 'Emily Rodriguez',
-      position: 'Founder, DesignHub',
-      content: "I hired Anil to rebuild our company website, and I couldn't be happier with the results. He took our outdated site and transformed it into a modern, responsive platform that perfectly represents our brand. Highly recommended!",
-      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1976&q=80',
+      name: 'Sushant Rimal',
+      position: 'Project Manager, SD Tech',
+      content: "I kept Anil Wagle for an internship at our company. He has progressed very fast and demonstrated exceptional quick learning skills.",
+      image: 'https://picsum.photos/100?search=person',
     },
   ];
 

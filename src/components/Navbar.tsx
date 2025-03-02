@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
       <div className="container-custom flex justify-between items-center">
         <NavLink to="/" className="flex items-center space-x-2">
           <Code className="h-8 w-8 text-primary-600 dark:text-primary-400" />
-          <span className="text-xl font-bold text-gray-900 dark:text-white">DevPortfolio</span>
+          <span className="text-xl font-bold text-gray-900 dark:text-white">Anil Wagle</span>
         </NavLink>
 
         {/* Desktop Navigation */}
