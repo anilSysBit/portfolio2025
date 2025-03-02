@@ -5,13 +5,14 @@ import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
 
 const ContactForm: React.FC = () => {
-  const formRef = useRef<HTMLFormElement>(null);
+  const form = useRef<HTMLFormElement | null>(null);
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
+    user_name: '',
+    user_email: '',
     subject: '',
     message: '',
   });
+
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -22,31 +23,28 @@ const ContactForm: React.FC = () => {
     }));
   };
 
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setLoading(true);
-
-    try {
-      // Replace these with your actual EmailJS service ID, template ID, and public key
-      await emailjs.sendForm(
-        'YOUR_SERVICE_ID', // Replace with your service ID
-        'YOUR_TEMPLATE_ID', // Replace with your template ID
-        formRef.current!,
-        'YOUR_PUBLIC_KEY' // Replace with your public key
-      );
-
-      toast.success('Message sent successfully!');
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: '',
-      });
-    } catch (error) {
-      console.error('Error sending email:', error);
-      toast.error('Failed to send message. Please try again.');
-    } finally {
-      setLoading(false);
+    setLoading(true)
+    if(form.current){
+      try {
+        // Replace these with your actual EmailJS service ID, template ID, and public key
+        const response = await emailjs.sendForm('service_0131bml', 'template_179bx7j', form.current, 'pTqcXQ4a0Q5Dl9F5Q')
+  
+        toast.success('Message sent successfully!');
+        setFormData({
+          user_name: '',
+          user_email: '',
+          subject: '',
+          message: '',
+        });
+      } catch (error) {
+        console.error('Error sending email:', error);
+        toast.error('Failed to send message. Please try again.');
+      } finally {
+        setLoading(false);
+      }
     }
   };
 
@@ -59,7 +57,7 @@ const ContactForm: React.FC = () => {
     >
       <h3 className="text-2xl font-bold mb-6 dark:text-white">Send Me a Message</h3>
       
-      <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+      <form ref={form} onSubmit={handleSubmit} className="space-y-6">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
             Your Name
@@ -67,8 +65,8 @@ const ContactForm: React.FC = () => {
           <input
             type="text"
             id="name"
-            name="name"
-            value={formData.name}
+            name="user_name"
+            value={formData.user_name}
             onChange={handleChange}
             required
             className="input"
@@ -83,8 +81,8 @@ const ContactForm: React.FC = () => {
           <input
             type="email"
             id="email"
-            name="email"
-            value={formData.email}
+            name="user_email"
+            value={formData.user_email}
             onChange={handleChange}
             required
             className="input"
