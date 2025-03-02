@@ -9,7 +9,7 @@ const FeaturedProjects: React.FC = () => {
     {
       title: 'E-Commerce Platform',
       description: 'A full-featured online store with a user website, admin panel, and seller panel.',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      image: '/projects/jagatpuradmin.jpg',
       tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
       liveUrl: 'https://example.com',
       githubUrl: 'https://github.com',
@@ -17,7 +17,7 @@ const FeaturedProjects: React.FC = () => {
     {
       title: 'Sports Management System',
       description: 'A platform with team users, admin users, and a visitor website for managing sports events.',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      image: '/projects/sportstable.png',
       tags: ['Django', 'React.js', 'REST Framework'],
       liveUrl: 'https://example.com',
       githubUrl: 'https://github.com',
@@ -25,16 +25,16 @@ const FeaturedProjects: React.FC = () => {
     {
       title: 'Portfolio Website',
       description: 'A modern, responsive portfolio website showcasing projects and skills.',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80',
+      image: '/projects/portfolio.png',
       tags: ['React', 'Framer Motion', 'Tailwind CSS'],
       liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com',
+      githubUrl: 'https://github.com/anilSysBit',
     }
   ]
   
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white dark:bg-gray-900">
       <div className="container-custom">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16">
           <div>

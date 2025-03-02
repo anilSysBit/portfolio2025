@@ -5,35 +5,28 @@ import { Download } from 'lucide-react';
 const AboutMe: React.FC = () => {
   const experiences = [
     {
-      title: 'Senior Frontend Developer',
-      company: 'TechInnovate',
-      period: '2021 - Present',
-      description: 'Lead frontend development for enterprise applications, mentoring junior developers, and implementing best practices.',
+      title: "Frontend Developer Intern",
+      company: "SD TECH",
+      period: "Jan 2024 - July 2024",
+      description:
+        "Developed and maintained web applications using modern technologies, collaborating with teams to enhance functionality and performance.",
     },
     {
-      title: 'Full Stack Developer',
-      company: 'WebSolutions Inc.',
-      period: '2018 - 2021',
-      description: 'Developed and maintained full-stack web applications using React, Node.js, and MongoDB.',
-    },
-    {
-      title: 'Web Developer',
-      company: 'DigitalCraft Agency',
-      period: '2016 - 2018',
-      description: 'Created responsive websites and implemented UI/UX designs for various clients.',
+      title: "React & Django Training",
+      company: "Open Source Platforms",
+      period: "Self-Learning",
+      description:
+        "Learned React for frontend development and Django for backend development through open-source materials, hands-on projects, and community contributions.",
     },
   ];
+  
+
 
   const education = [
     {
-      degree: 'Master of Computer Science',
-      institution: 'Tech University',
-      period: '2014 - 2016',
-    },
-    {
       degree: 'Bachelor of Computer Engineering',
-      institution: 'Engineering College',
-      period: '2010 - 2014',
+      institution: 'Tribhuvan University',
+      period: '2021 - 2025',
     },
   ];
 
@@ -61,9 +54,9 @@ const AboutMe: React.FC = () => {
             <h2 className="text-3xl font-bold mb-6 dark:text-white">About Me</h2>
             
             <p className="text-gray-700 dark:text-gray-300 mb-6">
-              I'm Anil Wagle, a passionate web developer with over 5 years of experience creating modern, 
+              I'm Anil Wagle, a passionate web developer with hands on trainings and skills creating modern, 
               responsive websites and web applications. I specialize in frontend development with React 
-              and have strong skills in backend technologies like Node.js.
+              and have strong skills in backend technologies like Django or Laravel.
             </p>
             
             <p className="text-gray-700 dark:text-gray-300 mb-6">
@@ -73,12 +66,13 @@ const AboutMe: React.FC = () => {
             </p>
             
             <a 
-              href="#" 
+              href="./anilwaglecv2025.pdf"
+              download="AnilWagle_CV.pdf"
               className="btn btn-primary mb-10"
-              onClick={(e) => {
-                e.preventDefault();
-                alert('Resume download functionality would be implemented here.');
-              }}
+              // onClick={(e) => {
+              //   e.preventDefault();
+              //   alert('Resume download functionality would be implemented here.');
+              // }}
             >
               Download Resume
               <Download className="ml-2 h-5 w-5" />
