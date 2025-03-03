@@ -24,7 +24,7 @@ const AboutMe: React.FC = () => {
 
   const education = [
     {
-      degree: 'Bachelor of Computer Engineering',
+      degree: 'Bachelor of Information Technology',
       institution: 'Tribhuvan University',
       period: '2021 - 2025',
     },
