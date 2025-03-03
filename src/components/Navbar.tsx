@@ -32,6 +32,7 @@ const Navbar: React.FC = () => {
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Projects', path: '/projects' },
+    { name: 'Components', path: 'https://anilcomponents.vercel.app', newTable:true,},
     { name: 'Contact', path: '/contact' },
   ];
 
