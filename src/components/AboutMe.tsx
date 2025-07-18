@@ -5,9 +5,9 @@ import { Download } from 'lucide-react';
 const AboutMe: React.FC = () => {
   const experiences = [
     {
-      title: "Frontend Developer Intern",
+      title: "Frontend Developer",
       company: "SD TECH",
-      period: "Jan 2024 - July 2024",
+      period: "2024 - 2025",
       description:
         "Developed and maintained web applications using modern technologies, collaborating with teams to enhance functionality and performance.",
     },
