@@ -1,10 +1,73 @@
 import React from 'react';
 import ContactForm from '../components/ContactForm';
 import ContactInfo from '../components/ContactInfo';
+import { Helmet } from 'react-helmet-async';
 
 const Contact: React.FC = () => {
   return (
-    <div className="pt-20">
+    <>
+    
+    <Helmet>
+        {/* 🔹 Basic SEO */}
+        <title>Contact | Anil Wagle – Web Developer</title>
+        <meta
+          name="description"
+          content="Get in touch with Anil Wagle, web developer from Nepal. Contact me for freelance projects, collaborations, or job opportunities in React, Node.js, and SEO-friendly web applications."
+        />
+        <link rel="canonical" href="https://www.anilwagle.com.np/contact" />
+
+        {/* 🔹 Open Graph (Facebook / LinkedIn) */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Contact Anil Wagle – Web Developer" />
+        <meta
+          property="og:description"
+          content="Reach out to Anil Wagle for web development projects, collaborations, or technical discussions."
+        />
+        <meta property="og:url" content="https://www.anilwagle.com.np/contact" />
+        <meta
+          property="og:image"
+          content="https://www.anilwagle.com.np/anil-wagle-portfolio.jpg"
+        />
+
+        {/* 🔹 Twitter Cards */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Anil Wagle – Web Developer" />
+        <meta
+          name="twitter:description"
+          content="Connect with Anil Wagle, React & Node.js developer from Nepal. Let’s work together on your next project."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.anilwagle.com.np/anil-wagle-twitter.jpg"
+        />
+
+        {/* 🔹 Schema Markup (JSON-LD) */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            url: "https://www.anilwagle.com.np/contact",
+            mainEntity: {
+              "@type": "Person",
+              name: "Anil Wagle",
+              jobTitle: "Software Developer",
+              url: "https://www.anilwagle.com.np",
+              sameAs: [
+              "https://github.com/anilSysBit",
+              "https://www.linkedin.com/in/anil-wagle-a09609224"
+              ],
+              contactPoint: {
+                "@type": "ContactPoint",
+                contactType: "Customer Service",
+                email: "anil.wagle808@email.com",
+                availableLanguage: ["English", "Nepali"]
+              }
+            }
+          })}
+        </script>
+      </Helmet>
+
+      <div className="pt-20">
       <div className="bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-900 dark:to-gray-800 py-20">
         <div className="container-custom text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 dark:text-white">Get In Touch</h1>
@@ -40,6 +103,8 @@ const Contact: React.FC = () => {
         </div>
       </section>
     </div>
+    </>
+   
   );
 };
 

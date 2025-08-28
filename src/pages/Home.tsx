@@ -27,7 +27,7 @@ const Home: React.FC = () => {
           content="Explore the portfolio of Anil Wagle, React & Node.js developer. Projects, skills, and ways to connect."
         />
         <meta property="og:url" content="https://www.anilwagle.com.np/" />
-        <meta property="og:image" content="https://www.anilwagle.com.np/preview.jpg" />
+        <meta property="og:image" content="https://www.anilwagle.com.np/anil-wagle-portfolio.jpg" />
 
         {/* 🔹 Twitter Cards */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -44,11 +44,11 @@ const Home: React.FC = () => {
             "@context": "https://schema.org",
             "@type": "Person",
             name: "Anil Wagle",
-            jobTitle: "Web Developer",
+            jobTitle: "Software Developer",
             url: "https://www.anilwagle.com.np",
             sameAs: [
-              "https://github.com/yourusername",
-              "https://www.linkedin.com/in/yourusername"
+             "https://github.com/anilSysBit",
+              "https://www.linkedin.com/in/anil-wagle-a09609224"
             ]
           })}
         </script>
