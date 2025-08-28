@@ -66,7 +66,7 @@ const Hero: React.FC = () => {
           >
             <img
               src="youngman1.png"
-              alt="Developer working on code" 
+              alt="Software Developer Anil Wagle" 
               className="w-full h-auto object-contain rounded-2xl"
             />
           </motion.div>

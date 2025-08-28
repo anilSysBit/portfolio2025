@@ -63,7 +63,7 @@ const Testimonials: React.FC = () => {
             <div className="flex items-center">
               <img 
                 src={testimonials[current].image} 
-                alt={testimonials[current].name} 
+                alt={'Anil Wagle Nepal ' + testimonials[current].name} 
                 className="w-14 h-14 rounded-full object-cover mr-4"
               />
               <div>

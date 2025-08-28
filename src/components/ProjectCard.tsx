@@ -28,7 +28,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <div className="relative overflow-hidden group">
         <img 
           src={image} 
-          alt={title} 
+          alt={'Website Anil | Anil Wagle | Software Developer Anil Wagle'} 
           className="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
