@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
             className="hidden lg:block"
           >
             <img
-              src="youngman1.png"
+              src="anil-wagle-image.png"
               alt="Software Developer Anil Wagle" 
               className="w-full h-auto object-contain rounded-2xl"
             />

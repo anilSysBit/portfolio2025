@@ -40,7 +40,7 @@ const AboutMe: React.FC = () => {
             transition={{ duration: 0.5 }}
           >
             <img 
-              src="youngman2.jpg" 
+              src="anil-wagle-about.jpg" 
               alt="Anil Wagle - Web Developer" 
               className="w-full h-auto rounded-2xl shadow-xl"
             />
