@@ -5,14 +5,78 @@
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anil Wagle | Web Developer</title>
-    <meta name="description" content="Portfolio of Anil Wagle, full-stack web developer specializing in React, Node.js, and SEO-friendly websites.">
+
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="Portfolio of Anil Wagle, full-stack web developer specializing in React, Node.js, and SEO-friendly websites." />
+    <meta name="keywords" content="Anil Wagle, Web Developer Nepal, React Developer, Full Stack Developer, Portfolio, Node.js Developer" />
+    <meta name="author" content="Anil Wagle" />
+
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Anil Wagle | Web Developer" />
+    <meta property="og:description" content="Explore the portfolio of Anil Wagle, a full-stack developer with expertise in React.js, Node.js, and modern web technologies." />
+    <meta property="og:url" content="https://anilwagle.com.np/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://anilwagle.com.np/assets/preview.png" />
+
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="OC4J4ePYkcIbbOliRWLclAPnGybVsHfvsElfyr9AGG8" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <meta name="google-site-verification" content="OC4J4ePYkcIbbOliRWLclAPnGybVsHfvsElfyr9AGG8" />
+
+    <!-- Styles (React build CSS will replace this on production) -->
+    <link rel="stylesheet" href="/assets/index.css" />
   </head>
   <body>
+    <!-- Static SEO-Friendly Content (for crawlers & noscript fallback) -->
+    <noscript>
+      <header>
+        <h1>Hi, I’m Anil Wagle 👋</h1>
+        <p>Full-stack Web Developer | React.js | Node.js | SEO-friendly Websites</p>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/projects/">Projects</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section id="about">
+          <h2>About Me</h2>
+          <p>I am a full-stack developer based in Nepal, specializing in React, Node.js, and modern cloud solutions. I build scalable and SEO-friendly applications.</p>
+        </section>
+
+        <section id="projects">
+          <h2>Featured Projects</h2>
+          <ul>
+            <li><a href="/projects/project1">Portfolio Website (React + Vite)</a></li>
+            <li><a href="/projects/project2">Node.js REST API</a></li>
+            <li><a href="/projects/project3">Cloud Deployment on AWS</a></li>
+          </ul>
+        </section>
+
+        <section id="contact">
+          <h2>Contact Me</h2>
+          <p>Email: <a href="mailto:youremail@domain.com">youremail@domain.com</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/anilwagle" target="_blank">linkedin.com/in/anilwagle</a></p>
+          <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></p>
+        </section>
+      </main>
+
+      <footer>
+        <p>© 2025 Anil Wagle. All rights reserved.</p>
+      </footer>
+    </noscript>
+
+    <!-- React Mount Point -->
     <div id="root"></div>
+
+    <!-- React App Script -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
